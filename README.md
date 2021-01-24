@@ -1,1 +1,2 @@
-# rcon-bypass
+# Rcon Bypass
+This is a simple module to provide security and functionality to the rcon system in SAPP this allows you to avoid boiler plate and provide an easier way to generate communication between server and client using the rcon system.
