@@ -3,8 +3,6 @@
 -- Sledmine
 -- SAPP commands interceptor
 ------------------------------------------------------------------------------
-local glue = require "glue"
-
 local rcon = {}
 
 -- Accepted rcon passwords
@@ -144,7 +142,7 @@ function rcon.detach()
     if (rcon.failMessageAddress) then
         -- Restore "rcon command failure" message
         safe_write(true)
-        write_byte(rcon.failMessageAddres, 0x72)
+        write_byte(rcon.failMessageAddress, 0x72)
         safe_write(false)
     end
 end
